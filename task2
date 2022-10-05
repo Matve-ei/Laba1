@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a, b, c, d, e, f, A, B;
+    system("chcp 1251");
+    system("cls");
+    printf("Введите номер отдельными цифрами!\n");
+   
+    printf("Выберите первое значение - ");
+    scanf_s("%d", &a);
+
+    printf("Выберите второе значение - ");
+    scanf_s("%d", &b);
+
+    printf("Выберите третье значение - ");
+    scanf_s("%d", &c);
+
+    printf("Выберите четвёртое значение - ");
+    scanf_s("%d", &d);
+
+    printf("Выберите пятое значение - ");
+    scanf_s("%d", &e);
+
+    printf("Выберите шестое значение - ");
+    scanf_s("%d", &f);
+
+    A = a + b + c;
+    B = d + e + f;
+
+    if (A == B)
+    {
+        printf("Это счталивый билет!");
+    }
+    else
+    {
+        printf("Удачи в следующий раз(");
+    }
+    return 0;
+}
