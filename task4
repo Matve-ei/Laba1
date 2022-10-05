@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+    
+	char a;
+	printf("1-winter,2-spring,3-summer,4-fall\n");
+    printf("Enter the season 1-4: ");
+    scanf_s("%d", &a);
+	switch (a)
+	{
+	case 1:
+		printf("December\n");
+		printf("January\n");
+		printf("February\n");
+		break;
+	case 2:
+		printf("March\n");
+		printf("April\n");
+		printf("May\n");
+		break;
+	case 3:
+		printf("June\n");
+		printf("July\n");
+		printf("Aygust\n");
+		break;
+	case 4:
+		printf("September\n");
+		printf("October\n");
+		printf("November\n");
+		break;
+	default: 
+		printf("Gramatic problem\n");
+	}
+	char c;
+	scanf_s("%c", &c);
+	return 0;
+}
