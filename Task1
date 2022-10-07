@@ -1,29 +1,27 @@
-#include <iostream>
-#include <stdlib.h>
+#include <stdio.h>
 #include <math.h>
 
 int main()
 {
-	system("chcp 1251");
-	system("cls");
-
-	float катет1 = 0;
-	float катет2 = 0;
-	float гипотенуза = 0;
-	float площадь = 0;
 	
-	printf("Выберите первый катет:\n");
-	scanf_s("%f", &катет1);
 
-	printf("Выбирите второй катет:\n");
-	scanf_s("%f", &катет2);
+	  float catet1 = 0;
+	  float catet2 = 0;
+	  float hepet = 0;
+	  float square = 0;
+	
+	printf("choose catet1:\n");
+	scanf_s("%f", &catet1);
 
-	площадь = катет1 * катет2 * 0.5;
-	гипотенуза = катет1 * катет1 + катет2 * катет2;
-	гипотенуза = sqrt(гипотенуза);
+	printf("choose catet2:\n");
+	scanf_s("%f", &catet2);
 
-	printf("площадь = %.2f\n", площадь);
-	printf("гипотенуза = %.2f\n", гипотенуза);
+	  square = catet1 * catet2 * 0.5;
+	  hepet = catet1 * catet1 + catet2 * catet2;
+      hepet = sqrt(hepet);
+
+	printf("your square = %.2f\n", square);
+	printf("ypor hepet = %.2f\n", hepet);
 
 
 
