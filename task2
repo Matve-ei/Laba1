@@ -1,28 +1,27 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 int main()
 {
     int a, b, c, d, e, f, A, B;
-    system("chcp 1251");
-    system("cls");
-    printf("Введите номер отдельными цифрами!\n");
+    
+    printf("Enter the number in separate digits!\n");
    
-    printf("Выберите первое значение - ");
+    printf("Choose the first value - ");
     scanf_s("%d", &a);
 
-    printf("Выберите второе значение - ");
+    printf("Choose the second value - ");
     scanf_s("%d", &b);
 
-    printf("Выберите третье значение - ");
+    printf("Choose the third value - ");
     scanf_s("%d", &c);
 
-    printf("Выберите четвёртое значение - ");
+    printf("Choose the four value - ");
     scanf_s("%d", &d);
 
-    printf("Выберите пятое значение - ");
+    printf("Choose the five value - ");
     scanf_s("%d", &e);
 
-    printf("Выберите шестое значение - ");
+    printf("Choose the six value - ");
     scanf_s("%d", &f);
 
     A = a + b + c;
@@ -30,14 +29,17 @@ int main()
 
     if (A == B)
     {
-        printf("Это счталивый билет!");
+        printf("This is a lucky ticket!");
     }
     else
     {
-        printf("Удачи в следующий раз(");
+        printf("good luck next time(");
     }
     return 0;
 }
+// Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
+// Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
+
 
 
 \\ решение2
