@@ -38,3 +38,31 @@ int main()
     }
     return 0;
 }
+
+
+\\ решение2
+
+
+#include <stdio.h>
+
+int main()
+{
+    int n, a1, a2, s1, s2;
+    printf("Input your number:\n");
+    scanf_s("%d", &n);
+    if(n > 999999 || n < 100000)
+    {
+        printf("Use 6-digit number");
+        return 0;
+    }
+    a1 = n / 1000;
+    s1 = (a1 / 100) + (a1 / 10 % 10) + (a1 % 10);
+    a2 = n % 1000;
+    s2 = (a2 / 100) + (a2 / 10 % 10) + (a2 % 10);
+    if (s1 == s2) {
+        printf("You are lucky!");
+    }
+    else {
+        printf("You are not!");
+    }
+}
